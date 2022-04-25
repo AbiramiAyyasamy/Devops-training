@@ -6,7 +6,7 @@ The Mission One of the most important responsibilities a system administrator ha
 
 This challenge is divided in two tasks, the first one having you research how to monitor a Linux system as well as what to look for when doing so. You will have to take note of all your findings in a text file (EX: markdown) while being as exhaustive as possible (what to monitor, how to monitor it, commands used, ...). Try to answer, but don't limit yourself to, the questions below to guide you through the research process:
 
-** What are the main area of concern when monitoring a system?**
+** What are the main area of concern when monitoring a system? **
  (EX: CPU load, disk usage, ...)
  
  * How can you check what are the most memory intensive running processes? 
@@ -17,7 +17,7 @@ This challenge is divided in two tasks, the first one having you research how to
  
  ** The second task is meant to serve as practice and will have you, in a different file, write a report with as many relevant information (what would make sense in a report) as you can muster on a system you manage.
  
-  It most preferably would be a remote machine, but it can also be your local machine as this is just practice.**
+  It most preferably would be a remote machine, but it can also be your local machine as this is just practice. **
 
 To validate the challenge you will have to make a pull request containing both files (research notes and system report) in this folder of your training's repository.
 
