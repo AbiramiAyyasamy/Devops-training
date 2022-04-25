@@ -15,9 +15,9 @@ This challenge is divided in two tasks, the first one having you research how to
 
  * How can you check the uptime of a machine? How can you assess the network traffic?
  
- **The second task is meant to serve as practice and will have you, in a different file, write a report with as many relevant information (what would make sense in a report) as you can muster on a system you manage.
+ **The second task is meant to serve as practice and will have you, in a different file, write a report with as many relevant information (what would make sense in a report) as you can muster on a system you manage.**
  
-  It most preferably would be a remote machine, but it can also be your local machine as this is just practice.**
+  **It most preferably would be a remote machine, but it can also be your local machine as this is just practice.**
 
 To validate the challenge you will have to make a pull request containing both files (research notes and system report) in this folder of your training's repository.
 
