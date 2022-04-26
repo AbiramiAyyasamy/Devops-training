@@ -1,4 +1,6 @@
-# What are Linux Logs? How to View Them, Most Important Directories & MoreIn software, it’s essential to monitor logs of system activities. Today we’ll unravel what Linux logs are and how you can view them.
+# What are Linux Logs? How to View Them, Most Important Directories & More
+
+*** In software, it’s essential to monitor logs of system activities. Today we’ll unravel what Linux logs are and how you can view them.
 
 Logging is a must for today’s developers and why Retrace was designed with a built-in, centralized log management tool. Retrace collects all your log data for streamlined monitoring and insights and includes all the features you need in a log management tool – log tailing, full-text searching, structured logging, monitoring, alerting and error tracking functionalities for a seamless experience.
 
