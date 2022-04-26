@@ -51,10 +51,13 @@ The uptime command gives a one line display of the following information.
 
 Sample outputs:
 
-~ up 1 week, 6 days, 2 hours, 50 minutes
+~up 1 week, 6 days, 2 hours, 50 minutes
+
 Want to find out the system is up since what time?
+
 Try passing the -s as follows to see information in yyyy-mm-dd HH:MM:SS format:
-~ uptime -s
+
+~uptime -s
 
 Sample outputs:
 
