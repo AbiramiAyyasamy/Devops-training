@@ -169,7 +169,8 @@ The netload command just displays a small report on the current traffic load, an
 
 The ifstat reports the network bandwidth in a batch style mode. The output is in a format that is easy to log and parse using other programs or utilities.
 
-`$ ifstat -t -i eth0 0.5'
+`$ ifstat -t -i eth0 0.5`
+
 
 ## Output:
 
