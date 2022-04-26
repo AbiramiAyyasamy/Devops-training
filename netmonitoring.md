@@ -174,12 +174,18 @@ The ifstat reports the network bandwidth in a batch style mode. The output is in
 ## Output:
 
  Time           eth0
+
 HH:MM:SS   KB/s in  KB/s out
+
 09:59:21      2.62      2.80
+
 09:59:22      2.10      1.78
+
 09:59:22      2.67      1.84
+
 09:59:23      2.06      1.98
-09:59:23      1.73      1.79`
+
+09:59:23      1.73      1.79
 
 Install ifstat - Ubuntu, Debian and Fedora users have it in the default repos. CentOS users need to get it from Repoforge, since its not there in Epel.
 
@@ -196,13 +202,22 @@ Dstat is a versatile tool (written in python) that can monitor different system 
 
 ## Output:
 
+<pre class="terminal">
+
 -net/total- ----system----
+
  recv  send|     time
+
    0     0 |25-04 10:27:13
+
 1738B 1810B|25-04 10:27:14
+
 2937B 2610B|25-04 10:27:15
+
 2319B 2232B|25-04 10:27:16
+
 2738B 2508B|25-04 10:27:17
+</pre>
 
 18. collectl
 
