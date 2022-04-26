@@ -1,6 +1,6 @@
 # What are Linux Logs? How to View Them, Most Important Directories & More
 
-***In software, it’s essential to monitor logs of system activities. Today we’ll unravel what Linux logs are and how you can view them.
+*In software, it’s essential to monitor logs of system activities. Today we’ll unravel what Linux logs are and how you can view them.*
 
 Logging is a must for today’s developers and why Retrace was designed with a built-in, centralized log management tool. Retrace collects all your log data for streamlined monitoring and insights and includes all the features you need in a log management tool – log tailing, full-text searching, structured logging, monitoring, alerting and error tracking functionalities for a seamless experience.
 
@@ -8,17 +8,21 @@ Logging is a must for today’s developers and why Retrace was designed with a b
 
 Retrace is built to do the heavy lifting for you, but it’s still important to understand Linux logs, how to view them and which logs are most important to your work. This mini-guide provides all the need-to-know essentials for you in an easily digestible format, so it won’t take up your entire lunch break to read – promise!
 
-** Tell the Whole Story with Integrated Logs + Errors
+**Tell the Whole Story with Integrated Logs + Errors**
+
 ### A Definition of Linux Logs
+
 Linux logs provide a timeline of events for the Linux operating system, applications and system and are a valuable troubleshooting tool when you encounter issues. When issues arise, analyzing log files is the first thing an administrator needs to do.
 
 For desktop app-specific issues, log files are written to different locations. Where a desktop application writes logs depends on the developer and whether or not the app allows for custom log configuration. Chrome, for example, writes crash reports to ‘~/.chrome/Crash Reports’.
 
-Linux log files are stored in plain-text and can be found in the ** /var/log directory and subdirectory. There are Linux logs for everything: system, kernel, package managers, boot processes, Xorg, Apache, MySQL, etc. In this article, we will focus specifically on Linux system logs.
+Linux log files are stored in plain-text and can be found in the **/var/log directory** and subdirectory. There are Linux logs for everything: system, kernel, package managers, boot processes, Xorg, Apache, MySQL, etc. In this article, we will focus specifically on Linux system logs.
 
-First things first, you can change to this directory using the ** cd command. You also need to be the root user to view or access log files on Linux or Unix-like operating systems.
+First things first, you can change to this directory using the **cd** command. You also need to be the root user to view or access log files on Linux or Unix-like operating systems.
 
-How to View Linux Logs
+**How to View Linux Logs**
+
+
 Like any other OS, you can use certain commands to see Linux log files.
 
 Linux logs will display with the command cd/var/log. Then, you can type ls to see the logs stored under this directory. One of the most important logs to view is the syslog, which logs everything but auth-related messages.
