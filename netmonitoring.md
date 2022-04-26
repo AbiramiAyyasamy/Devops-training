@@ -173,6 +173,8 @@ The ifstat reports the network bandwidth in a batch style mode. The output is in
 
 ## Output:
 
+<pre class="terminal">
+
  Time           eth0
 
 HH:MM:SS   KB/s in  KB/s out
@@ -186,6 +188,7 @@ HH:MM:SS   KB/s in  KB/s out
 09:59:23      2.06      1.98
 
 09:59:23      1.73      1.79
+</pre>
 
 Install ifstat - Ubuntu, Debian and Fedora users have it in the default repos. CentOS users need to get it from Repoforge, since its not there in Epel.
 
