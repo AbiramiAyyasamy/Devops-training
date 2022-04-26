@@ -16,7 +16,8 @@ Here is a list of the commands, sorted by their features.
 
 Now lets take a look at each of the commands and how to use them to monitor network usage:
 
-- Nload
+1. Nload
+
 Nload is a commandline tool that allows users to monitor the incoming and outgoing traffic separately.
 
     It also draws out a graph to indicate the same, the scale of which can be adjusted. Easy and simple to use, and does not support many options.
@@ -24,13 +25,16 @@ Nload is a commandline tool that allows users to monitor the incoming and outgoi
 So if you just need to take a quick look at the total bandwidth usage without details of individual processes, then nload will be handy.
 
 Installing Nload - Fedora and Ubuntu have got it in the default repos. CentOS users need to get nload from Epel repositories.
-`
-# fedora or centos
-$ yum install nload -y
-# ubuntu/debian
-$ sudo apt-get install nload`
 
-- iftop
+#### fedora or centos
+
+`$ yum install nload -y`
+
+#### ubuntu/debian
+`$ sudo apt-get install nload`
+
+2. iftop
+
 Iftop measures the data flowing through individual socket connections, and it works in a manner that is different from Nload.
 
 Iftop uses the pcap library to capture the packets moving in and out of the network adapter, and then sums up the size and count to find the total bandwidth under use.
@@ -44,11 +48,14 @@ But being based on the pcap library, iftop is able to filter the traffic and rep
 The n option prevents iftop from resolving ip addresses to hostname, which causes additional network traffic of its own.
 
 3. iptraf
-Iptraf is an interactive and colorful IP Lan monitor. It shows individual connections and the amount of data flowing between the hosts. Here is a screenshot
+
+Iptraf is an interactive and colorful IP Lan monitor. It shows individual connections and the amount of 
+data flowing between the hosts. Here is a screenshot
 
 `$ sudo iptraf`
 
 4. nethogs
+
 Nethogs is a small 'net top' tool that shows the bandwidth used by individual processes and sorts the list putting the most intensive processes on top.
 
 In the event of a sudden bandwidth spike, quickly open nethogs and find the process responsible. Nethogs reports the PID, user and the path of the program.
@@ -59,30 +66,38 @@ In the event of a sudden bandwidth spike, quickly open nethogs and find the proc
 Bmon (Bandwidth Monitor) is a tool similar to nload that shows the traffic load over all the network interfaces on the system. The output also consists of a graph and a section with packet level details.
 Install Bmon - Ubuntu, Debian and Fedora users can install from default repos. CentOS users need to setup repoforge, since its not available in Epel.
 
-# ubuntu or debian
-$ sudo apt-get install bmon
-# fedora or centos (from repoforge)
-$ sudo yum install bmon
+#### ubuntu or debian
+
+`$ sudo apt-get install bmon`
+
+#### fedora or centos (from repoforge)
+
+`$ sudo yum install bmon`
 Bmon supports many options and is capable of producing reports in html format. Check the man page for more information
 
 6. slurm
+
 Slurm is 'yet' another network load monitor that shows device statistics along with an ascii graph. It supports 3 different styles of graphs each of which can be activated using the c, s and l keys. Simple in features, slurm does not display any further details about the network load.
 
 `$ slurm -s -i eth0`
 
 7. tcptrack
-Tcptrack is similar to iftop, and uses the pcap library to capture packets and calculate various statistics like the bandwidth used in each connection.
+
+Tcptrack is similar to iftop, and uses the pcap library to capture packets and calculate various 
+statistics like the bandwidth used in each connection.
 
 It also supports the standard pcap filters that can be used to monitor specific connections.
 
 Install tcptrack - Ubuntu, Debian and Fedora have it in default repos. CentOS users need to get it from RepoForge as it is not available in Epel either.
 
-# ubuntu, debian
-$ sudo apt-get install tcptrack
-# fedora, centos (from repoforge repository)
-$ sudo yum install tcptrack
+#### ubuntu, debian
+`$ sudo apt-get install tcptrack`
+
+#### fedora, centos (from repoforge repository)
+`$ sudo yum install tcptrack`
 
 8. Vnstat
+
 Vnstat is bit different from most of the other tools. It actually runs a background service/daemon and keeps recording the size of data transfer all the time.
 
 Next it can be used to generate a report of the history of network usage.
@@ -94,18 +109,21 @@ Next it can be used to generate a report of the history of network usage.
 Running vnstat without any options would simply show the total amount of data transfer that took place since the date the daemon is running.
 
 9. bwm-ng
+
 Bwm-ng (Bandwidth Monitor Next Generation) is another very simple real time network load monitor that reports a summary of the speed at which data is being transferred in and out of all available network interfaces on the system.
 
 `$ bwm-ng`
+
 If the console size is sufficiently large, bwm-ng can also draw bar graphs for the traffic using the curses2 output mode.
 
 `$ bwm-ng -o curses2`
 
 Install Bwm-NG - On CentOS bwm-ng can be installed from Epel.
 
-`# ubuntu or debian
-$ sudo apt-get install bwm-ng
-# fedora or centos (from epel)`
+#### ubuntu or debian
+`$ sudo apt-get install bwm-ng`
+
+#### fedora or centos (from epel)
 
 `$ sudo apt-get install bwm-ng`
 
@@ -139,7 +157,7 @@ Like netwatch and pktstat, trafshow reports the current active connections, thei
 
 Monitor only tcp connections
 
-$ sudo trafshow -i eth0 tcp
+`$ sudo trafshow -i eth0 tcp`
 
 15. Netload
 
@@ -148,10 +166,13 @@ The netload command just displays a small report on the current traffic load, an
 `$ netload eth0`
 
 16. ifstat
+
 The ifstat reports the network bandwidth in a batch style mode. The output is in a format that is easy to log and parse using other programs or utilities.
 
 `$ ifstat -t -i eth0 0.5
-  Time           eth0
+
+
+ Time           eth0
 HH:MM:SS   KB/s in  KB/s out
 09:59:21      2.62      2.80
 09:59:22      2.10      1.78
@@ -161,23 +182,26 @@ HH:MM:SS   KB/s in  KB/s out
 
 Install ifstat - Ubuntu, Debian and Fedora users have it in the default repos. CentOS users need to get it from Repoforge, since its not there in Epel.
 
-`# ubuntu, debian
-$ sudo apt-get install ifstat
-# fedora, centos (Repoforge)
-$ sudo yum install ifstat`
+#### ubuntu, debian
+`$ sudo apt-get install ifstat`
+#### fedora, centos (Repoforge)
+`$ sudo yum install ifstat`
 
 17. dstat
+
 Dstat is a versatile tool (written in python) that can monitor different system statistics and report them in a batch style mode or log the data to a csv or similar file. This example shows how to use dstat to report network bandwidth
 
 `$ dstat -nt`
 
+Output:
+
 -net/total- ----system----
  recv  send|     time
-   0     0 |23-03 10:27:13
-1738B 1810B|23-03 10:27:14
-2937B 2610B|23-03 10:27:15
-2319B 2232B|23-03 10:27:16
-2738B 2508B|23-03 10:27:17
+   0     0 |25-04 10:27:13
+1738B 1810B|25-04 10:27:14
+2937B 2610B|25-04 10:27:15
+2319B 2232B|25-04 10:27:16
+2738B 2508B|25-04 10:27:17
 
 18. collectl
 
