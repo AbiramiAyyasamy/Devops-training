@@ -19,7 +19,7 @@ Now lets take a look at each of the commands and how to use them to monitor netw
 - Nload
 Nload is a commandline tool that allows users to monitor the incoming and outgoing traffic separately.
 
-It also draws out a graph to indicate the same, the scale of which can be adjusted. Easy and simple to use, and does not support many options.
+    It also draws out a graph to indicate the same, the scale of which can be adjusted. Easy and simple to use, and does not support many options.
 
 So if you just need to take a quick look at the total bandwidth usage without details of individual processes, then nload will be handy.
 
