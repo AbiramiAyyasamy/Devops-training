@@ -51,7 +51,7 @@ The uptime command gives a one line display of the following information.
 
 Sample outputs:
 
-`up 1 week, 6 days, 2 hours, 50 minutes`
+`up 13 hours, 13 minutes`
 
 Want to find out the system is up since what time?
 
@@ -61,4 +61,4 @@ Try passing the -s as follows to see information in yyyy-mm-dd HH:MM:SS format:
 
 Sample outputs:
 
-2019-05-16 08:13:44
+`2022-04-25 20:49:59`
