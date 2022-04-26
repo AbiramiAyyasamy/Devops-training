@@ -24,7 +24,7 @@ uptime -s
 
 Sample outputs:
 
-2019-05-16 08:13:44
+`2022-04-25 9:49:59`
 
 w command – Show who is logged on and what they are doing including the uptime of a Linux box
 top command – Display Linux server processes and display system Uptime in Linux too.
